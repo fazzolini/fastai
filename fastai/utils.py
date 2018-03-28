@@ -40,6 +40,8 @@ from keras.preprocessing.text import Tokenizer
 from vgg16 import Vgg16
 np.set_printoptions(precision=4, linewidth=100)
 
+# this is a test comment for uploading to remote
+# another comment
 
 to_bw = np.array([0.299, 0.587, 0.114])
 
