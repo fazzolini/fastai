@@ -67,3 +67,6 @@ ls -ap | egrep "^\..*/$""
 * [https://explainshell.com](www.explainshell.com) is *awesome* for explaining bash commands.
 * [Pipe](http://www.linfo.org/pipes.html) is a type of [redirection](http://www.linfo.org/redirection.html).
 * Each command has [3 streams](https://ryanstutorials.net/linuxtutorial/piping.php): standard input `STDIN(0)`, standard output `STDOUT(1)` and standard error `STDERR(2)`. 
+* `<` input redirect, `>` output redirect (overwrite), `>>` append.
+* `2>`, `2>>` standard error redirect operators. `2` in this case is a *file descriptor* of `STDERR`.
+* [wildcards](http://www.linfo.org/wildcard.html) – `*`, `?` and `[]`.
