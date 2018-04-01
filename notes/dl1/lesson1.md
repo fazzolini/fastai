@@ -70,3 +70,8 @@ ls -ap | egrep "^\..*/$""
 * `<` input redirect, `>` output redirect (overwrite), `>>` append.
 * `2>`, `2>>` standard error redirect operators. `2` in this case is a *file descriptor* of `STDERR`.
 * [wildcards](http://www.linfo.org/wildcard.html) – `*`, `?` and `[]`.
+* `tree -d dir_name` list directory structure (on Max OS X can [`brew install tree`](http://brewformulas.org/Tree))
+* `ls -R | grep "\.jpg$" | wc -l` count all `.jpg` files in all folders and subfolders of current directory
+
+### Python Bits
+* [formatted](https://cito.github.io/blog/f-strings/) [string literals](https://docs.python.org/3/whatsnew/3.6.html) ([PEP 498](https://www.python.org/dev/peps/pep-0498))
