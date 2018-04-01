@@ -45,3 +45,18 @@ This feature allows to use full power of the IDE to work with files on the remot
 * Second, he output is [piped](http://www.linfo.org/pipes.html) into `grep` that will match all the lines that **do not start** with `d` or `t`. This means matching all the files in a given folder. The `t` is needed because the first line of output of `ls -l` has the total number of items, so the `t` in `^[^dt]` will address this corner case.
 * Lastly, the output of `grep` is piped into `wc -l` command that counts the number of lines.
 
+```bash
+ls -ap | grep -v / | egrep "^\.."
+```
+
+* list all hidden files in a directory
+* `ls -ap` lists all (`-a`) files and directories, it puts `/` after path of each directory (`-p`)
+* `grep -v /` does ***inverse match*** of directories. It matches everything that is not a directory.
+* `egrep "^\.."` matches all lines that start with `.`
+
+### Linux Useful Nuggets
+
+[www.linfo.org](http://www.linfo.org/) is a very good source of information about Linux.
+
+* [Pipe](http://www.linfo.org/pipes.html) is a type of [redirection](http://www.linfo.org/redirection.html).
+* Each command has [3 streams](https://ryanstutorials.net/linuxtutorial/piping.php): standard input `STDIN(0)`, standard output `STDOUT(1)` and standard error `STDERR(2)`.
