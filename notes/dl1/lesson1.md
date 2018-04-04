@@ -75,5 +75,16 @@ ls -ap | egrep "^\..*/$""
 * `tree -d dir_name` list directory structure (on Max OS X can [`brew install tree`](http://brewformulas.org/Tree))
 * `ls -R | grep "\.jpg$" | wc -l` count all `.jpg` files in all folders and subfolders of current directory
 
-### Python Bits
+## Python, IPython and `fastai` library
+
+### Python bits
+
 * [formatted](https://cito.github.io/blog/f-strings/) [string literals](https://docs.python.org/3/whatsnew/3.6.html) ([PEP 498](https://www.python.org/dev/peps/pep-0498))
+
+### IPython bits
+
+* `%reload_ext` to reload an IPython extension by its module name (from [Ipython *magics*](http://ipython.readthedocs.io/en/stable/interactive/magics.html))
+* `%reload_ext autoreload` and then `%autoreload 2` allows to change code in IDE and then automatically reload all imports when running code in Jupyter notebook ([autoreload documentation](https://ipython.org/ipython-doc/3/config/extensions/autoreload.html))
+
+
+### `fastai` library
